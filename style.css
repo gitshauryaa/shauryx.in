@@ -1,1 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+body {
+  background: #0b0d10;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+header a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  color: #00e5ff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+.hero span {
+  color: #00e5ff;
+}
+
+.hero p {
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.btns a {
+  padding: 12px 25px;
+  margin-right: 10px;
+  background: #00e5ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btns .outline {
+  background: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 60px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #00e5ff;
+}
+
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+/* CONTACT */
+form {
+  max-width: 500px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #00e5ff;
+  color: #fff;
+}
+
+button {
+  background: #00e5ff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
